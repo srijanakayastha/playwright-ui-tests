@@ -1,3 +1,4 @@
+const { test, expect } = require('@playwright/test');
 test('Fill and submit contact form', async ({ page }) => {
   await page.goto('https://demoqa.com/text-box');
   await page.fill('#userName', 'Abc');
