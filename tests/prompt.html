@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prompt Box Test</title>
+</head>
+<body>
+  <h2>Playwright Prompt Test</h2>
+  <p id="result"></p>
+  <button onclick="handlePrompt()">Click Me</button>
+
+  <script>
+    function handlePrompt() {
+      const name = prompt("What is your name?");
+      if (name) {
+        document.getElementById("result").innerText = "Hello, " + name;
+      } else {
+        document.getElementById("result").innerText = "No name entered.";
+      }
+    }
+  </script>
+</body>
+</html>
